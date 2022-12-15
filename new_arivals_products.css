@@ -1,0 +1,19 @@
+#all_products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+}
+#all_products>div>img{
+width: 90%;
+
+}
+#all_products>div>button{
+background-color: black;
+color: white;
+padding: 10px 50px;
+}
+#all_products>div>button:hover{
+    cursor: pointer;
+    background-color: rgba(000, 000, 000, 0.7);
+}
