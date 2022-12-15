@@ -8,6 +8,8 @@
     <link rel="icon" href="./images/PoshStorm.png" type="icon">
     <link rel="stylesheet" href="./new_arrivals.css">
     <link rel="stylesheet" href="./new_arivals_products.css">
+    <script src="https://kit.fontawesome.com/343e85a50f.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <!-- ******************************Navbar********************************************* -->
@@ -25,6 +27,18 @@
         
     </nav>
    </header>
+
+   <!-- ********************************HOME/MEN/NEW ARRIVAL LINE************************** -->
+   <div id="home_men_new">
+        <span>Home</span>
+        <span>/</span>
+        <span>Men</span>
+        <span>/</span>
+        <span>New Arrivals</span>
+   </div>
+   
+
+
    <!-- **************************Products Part*********************************** -->
    <div id="products_area">
         <div id="left_panel">
@@ -34,14 +48,48 @@
             <div id="brand"><div class="left_panel_sorting" ><h3>Brand</h3><span>+</span></div></div>
             <div id="material"><div class="left_panel_sorting" ><h3>Material</h3><span>+</span></div></div>
             <div  id="occassion"><div class="left_panel_sorting"><h3>Occassion</h3><span>+</span></div></div>
-           <div  id="price"> <div class="left_panel_sorting"><h3>Price</h3><span>+</span></div></div>
+           <div  id="price_"> <div class="left_panel_sorting"><h3>Price</h3><span>+</span></div></div>
            <div  id="sale"> <div class="left_panel_sorting" ><h3>Sale</h3><span>+</span></div></div>
            <div id="style"> <div class="left_panel_sorting" ><h3>Style</h3><span>+</span></div></div>
         </div>
-    <div id="all_products"></div>
+      
+        <div>
+            <div id="mens_new_arrival">
+                <span><strong>Mens New Arrival</strong></span>
+            </div>
+     <!--***** All New Arrivals Clothing Shoes Accessories Grooming & Cologne Designer Collections***** -->
+            <div id="all_new">
+                
+                      <span>All New Arrivals </span>
+                      <span> Clothing </span>
+                      <span> Shoes </span>
+                      <span> Accessories </span>
+                     <span> Grooming & Cologne </span>
+                      <span> Designer Collections </span>
+             </div>
+             <!-- ******************Sort********************************** -->
+
+             <div id="total_items_part">
+                <div><span >  <p id="loading_">Loading...</p></span></div>
+                <div>
+                    <select name="" onChange="sortFunctionality()">
+                        <option value="">Sort by Price</option>
+                        <option value="high_to_low">Sort by price: high to low</option>
+                        <option value="low_to_high">Sort by price: low to high</option>
+                    </select>
+                </div>
+               
+             </div>
+        <!-- ***************************Data from API************************** -->
+            <div id="all_products"></div>
+        </div>
    </div>
 </body>
 </html>
 <script src="./new_arrivals.js"></script>
 <script src="./new_arrivals_products.js"></script>
+
+
+
+
 
