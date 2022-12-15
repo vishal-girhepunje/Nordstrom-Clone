@@ -1,32 +1,27 @@
-let flag1
-let size = document.querySelector("#size")
+let count = 0;
+let size = document.getElementById("size_size")
 size.addEventListener("click", () => {
-    if (flag1 == false) {
-        document.querySelector(".empty").innerHTML = "";
-        document.querySelector(".empty1").innerHTML = "";
-        flag1 = true;
+    if (count % 2 == 1) { 
+        document.querySelector("#size").innerHTML = "" 
+        count++
     }
- 
-    else {
-        let menshoes = document.createElement("div")
-        menshoes.setAttribute("class", "empty")
-        let h3_men_shoes = document.createElement("h3")
-        h3_men_shoes.innerText = "Men : Shoes"
-        menshoes.append(h3_men_shoes)
+  else { 
+    let menshoes = document.createElement("div")
+    menshoes.setAttribute("class", "empty")
+    let h3_men_shoes = document.createElement("h3")
+    h3_men_shoes.innerText = "Men : Shoes"
+    menshoes.append(h3_men_shoes)
     
-        let mensclothing = document.createElement("div")
-        mensclothing.setAttribute("class", "empty1")
-        let h3_mens_clothing = document.createElement("h3")
-        h3_mens_clothing.innerText = "Men : Clothing"
-        mensclothing.append(h3_mens_clothing)
-    
-    
-    
-        size.append(menshoes, mensclothing)
-        flag1 = false
-    }
-    
+    let mensclothing = document.createElement("div")
+    mensclothing.setAttribute("class", "empty")
+    let h3_mens_clothing = document.createElement("h3")
+    h3_mens_clothing.innerText = "Men : Clothing"
+    mensclothing.append(h3_mens_clothing)
+        document.querySelector("#size").append(menshoes, mensclothing)   
+        count++
+  }
 });
+  
 
 let color = document.querySelector("#color")
 color.addEventListener("click", () => { 

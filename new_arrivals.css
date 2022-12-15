@@ -63,8 +63,14 @@ nav{
     border-bottom: 1px solid #e6e6e6;   
 }
 #all_products{
-    background-color: aquamarine;
+    
     height: 600px;
     width: 100%;
+}
+.empty{
+    padding: 10px 5px; 
+}
+.empty>h3{
+    color: grey;
 }
 
