@@ -17,7 +17,26 @@ size.addEventListener("click", () => {
     let h3_mens_clothing = document.createElement("h3")
     h3_mens_clothing.innerText = "Men : Clothing"
     mensclothing.append(h3_mens_clothing)
-        document.querySelector("#size").append(menshoes, mensclothing)   
+        
+    let mens_dress_shirt = document.createElement("div")
+    mens_dress_shirt.setAttribute("class", "empty")
+    let h3_mens_dress_shirt = document.createElement("h3")
+    h3_mens_dress_shirt.innerText = "Men : Dress Shirt"
+        mens_dress_shirt.append(h3_mens_dress_shirt)
+        
+        let menspants = document.createElement("div")
+        menspants.setAttribute("class", "empty")
+        let h3_mens_pants = document.createElement("h3")
+        h3_mens_pants.innerText = "Men : Pants"
+        menspants.append(h3_mens_pants)
+        
+        let menssuits = document.createElement("div")
+        menssuits.setAttribute("class", "empty")
+        let h3_mens_suits = document.createElement("h3")
+        h3_mens_suits.innerText = "Men : Suits"
+        menssuits.append(h3_mens_suits)
+        
+        document.querySelector("#size").append(menshoes, mensclothing,mens_dress_shirt,menspants,menssuits)   
         count++
   }
 });
@@ -43,7 +62,7 @@ occassion.addEventListener("click", () => {
     console.log("clicked")
 })
 
-let price = document.querySelector("#price")
+let price = document.querySelector("#price_")
 price.addEventListener("click", () => { 
     console.log("clicked")
 })
