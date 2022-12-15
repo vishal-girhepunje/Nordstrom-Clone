@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    font-size: 1.5em;
+    color: #989898;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#origin_country_bar{
+    width: 100%;
+    height: 40.6px;
+    background-color:#e30e0e;
+    display: flex;
+    justify-content: left;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#center_text{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+#center_text>p, #center_text>a{
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+    
+} 
+
+/* 88888888888888888888888888888888 */
+#products_area{
+    display: flex;
+    
+   height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#left_panel{
+   width: 25%;
+   padding-right: 30px;
+   margin-right: 10px;
+   
+}
+.left_panel_sorting{
+    padding: 20px 0px;
+    border-top: 1px solid #e6e6e6; 
+    font-size: 14px; 
+    color: rgb(53, 52, 52);
+    display: flex;
+    justify-content:space-between;
+}
+.left_panel_sorting:hover{
+    cursor: pointer;
+}
+.left_panel_sorting:last-child{
+    border-bottom: 1px solid #e6e6e6;   
+}
+#all_products{
+    
+    height: 600px;
+    width: 100%;
+}
+.empty{
+    padding: 15px 0px; 
+}
+.empty>h3{
+    color: rgb(74, 73, 73);
+    font-size: 14px; 
+}
+
+#home_men_new{
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 15px;
+    width: 96%;
+    font-size: .7rem;
+}
+#mens_new_arrival{
+    margin-top: 25px;
+    font-size: .7rem;
+}
+#mens_new_arrival>span{
+    color: black;
+    font-family: 'Poppins', sans-serif; 
+}
+#all_new{
+    display: flex;
+    border-bottom: 2px solid rgb(190, 189, 189);
+    
+}
+#all_new>span{
+    font-size: 1.1rem;
+    margin-right: 25px;
+    padding: 10px  6px 0px 0px;
+}
+#all_new>span:nth-child(1){
+    border-bottom: 5px solid black;
+}
+#all_new>span:hover{
+    border-bottom: 5px solid black; 
+}
+
+#total_items_part{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#total_items_part>div>select{
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem; 
+}
+#loading_{
+    font-size: large;
+}

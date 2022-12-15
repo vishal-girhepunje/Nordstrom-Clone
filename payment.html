@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+       .container{
+        background-color: rgb(240, 248, 129);
+         width: 70%;
+         border:2px solid blue;
+         height:500px;
+         margin-top: 20px;
+         margin-left: 200px;
+         text-align: center;
+         border-radius: 20px;
+         /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+         border: 1px solid rgb(230, 224, 224);
+         /* text-align: center; */
+         /* height: 100vh; */
+      }
+      .container>#but{
+        width: 300px;
+        height: 25px;
+        /* border-radius: 20px; */
+        background-color: rgb(177, 18, 18);
+        color: white;
+        font-weight:bold;
+        font-size: 20px;
+        border: 1px solid white;
+      }
+      .big{
+        width:60%;
+        height:25px;
+        text-align: center;
+        
+      }
+      #order{
+        width: 67%;
+        height:auto;
+        background-color: aquamarine;
+        margin-left:200px ;
+        border: 1px solid aquamarinegray;
+        padding-left: 3%;
+        border-radius: 10px;
+      }
+      #pay{
+        display: flex;
+        width: 67%;
+        background-color: aquamarine;
+        /* justify-content: center; */
+        justify-content: space-between;
+        border: 0px solid gray;
+        margin-left:200px ;
+        margin-top:20px ;
+        padding: 16px;
+        border-radius: 20px;
+
+      }
+      #tab{
+        margin-left: 15%;
+      }
+      #break{
+        margin-top: 12%;
+        margin-right: 15%;
+        margin-bottom: 2%;
+
+      }
+
+      .done{
+        color: rgb(228, 62, 62);
+      }
+      .card {
+      width: 200px;
+      height: 20px;
+      }
+
+    </style>
+</head>
+<body>
+  
+        <div class="container">
+            <h1 style="color:rgb(201, 59, 83) ;">Shipping Address Details</h1>
+            <label class="done"> Name </label><br>
+            <input class="big"  type="text" name="" id="naam" placeholder="Enter Name"><br><br>
+            <label class="done">Mobile no.</label><br>
+            <input class="big" id="num" type="tel"placeholder="Enter Mobile Number"><br><br>
+            <label class="done">Email </label><br>
+            <input class="big" type="email" id="ema" placeholder="Enter Email" ><br><br>
+            
+            <label style="color:rgb(201, 59, 83)">Country</label><br>
+            <select class="big" name="" id="" >
+                <option value="">Select Country</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">Turky</option>
+                <option value="">Russia</option>
+                <option value="">Brazil</option>
+                 <option value="">France</option>
+                <option value="">Caneda</option>
+                <option value="">UK</option>
+                <option value="">China</option>
+                <option value="">Mexico</option>
+
+
+            </select><br><br>
+            <label style="color:rgb(201, 59, 83)">Address Detail:</label><br>          
+            <input class="big" type="text" id="cnf" placeholder=""><br><br>
+            <label style="color:rgb(201, 59, 83)">State</label><br>          
+            <input class="big" type="text" id="cnf" placeholder="Enter your state"><br>
+               
+            <!-- <button id="but"> SIGN UP </button> -->
+    
+        </div >
+
+        <div id="order">
+            <h2 style="color:rgb(201, 59, 83)">Order Details</h2>
+       
+        <h3 style="color:rgb(201, 59, 83)">Order Total:<span id="total">0</span></h3>
+                
+        </div>
+
+        <div id="pay">
+            <div id="tab">
+                <h2 style="color:rgb(201, 59, 83) ;">Payment Information</h2>
+                <img style="width:140px" src="https://www.nicepng.com/png/full/54-542683_credit-card-pay-now-visa-and-mastercard-accepted.png" alt="">
+                
+                <p>Credit Card Number:</p>
+                <p>Card Type</p>
+
+                <p>Expiration Date:</p>
+                <p>Security Code:</p>
+            </div>
+
+           <div id="break"><input class="card" type="text"><br><br>
+            <select class="card" name="" id="" >
+                <option value="">Select Card</option>
+                <option value="">Visa</option>
+                <option value="">MasterCard</option>
+
+            </select><br><br>
+            <input class="card" type="text"><br><br>
+            <input class="card" type="text"></div>
+
+        </div>
+        <button id="place-order" style="text-align: center; display: block; margin-left: 210px; margin-top: 20px; padding: 8px; background-color: rgb(195, 71, 129); color: white;">Place Order</button>
+</body>
+</html>
+    <script>
+    document.querySelector("button").addEventListener("click", fun2);
+
+let arr= JSON.parse(localStorage.getItem(""))||[];
+
+function fun2() {
+    let name = document.querySelector("").value;
+    // let last = document.querySelector("#last").value;
+    let email = document.querySelector("#").value;
+    let mobile = document.querySelector("#").value;
+    let password = document.querySelector("#").value;
+    let confirm = document.querySelector("#").value;
+   
+    let dataobj={
+        name,
+        // last,
+        email,
+        mobile,
+        password,
+        confirm,
+
+    };
+arr.push(dataobj);
+localStorage.setItem("cart",JSON.stringify(arr))
+window.location.href="signin1.html";
+}
+  
+
+document.querySelector("#total").innerText=localStorage.getItem("total-price");
+document.querySelector("#place-order").addEventListener("click",function(){
+    localStorage.removeItem("myproduct")
+    localStorage.removeItem("total-price")
+    alert("Your Order placed successfully!..........Thanks!!! VISIT AGAIN..")
+    window.location.href="index.html"
+})
+
+
+</script>
