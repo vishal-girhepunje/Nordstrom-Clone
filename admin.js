@@ -25,7 +25,6 @@ button.addEventListener('click', () => {
     let pro_price = document.getElementById('productPrice').value;
     let prod_img = document.getElementById('productImage').value;
     
-    pro_price=`INR ${pro_price}`;
     let obj={
         prod_img,
         pro_brand,
