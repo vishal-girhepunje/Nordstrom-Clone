@@ -12,7 +12,7 @@ async function sendData(objdata) {
             let data = await res.json();
             return data;
         } else {
-            return alert(`server responded with a ${res.status} error.`)
+            return `server responded with a ${res.status} error.`
         }
     } catch (error) {
         return 'error';
