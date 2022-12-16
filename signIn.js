@@ -4,18 +4,16 @@ let input = document.getElementById("input");
 
 
 button.addEventListener("click", ()=>{
-    //prevent();
-    sessionStorage.setItem("email", JSON.stringify(input.value));
-    window.location.href = "./signUp.html"
+    prevent();
+    sessionStorage.setItem("email", JSON.stringify(input.value));    
 });
 
 function prevent(){
-    if(input == null || input == ""){
-        alert("Enter email address!")
-        window.location.href = "./signIn.html"
-           
-    }else if(input.value!== null || input.value !== ""){
-        
-        window.location.replace = "./signUp.html" 
+    if(input.value !== null || input.value !== ""){
+        console.log(input.value)
+        window.location.href = "signUp.html";
+        input.value="";       
+    }else{
+        alert("Enter email address!")      
     }
-}
+};
