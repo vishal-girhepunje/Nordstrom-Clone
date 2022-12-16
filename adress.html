@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont{
+            width: 100%;
+            height: auto;
+        }
+        #container{
+            display: flex;
+            width: 100%;
+            height: 95px;
+        }
+        #container1{
+            border: 1px solid black;
+            width: 70%;
+            height: 1200px;
+            margin: auto;
+            display: flex;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+        }
+        #cont1{
+            width: 70%;
+            height: 100%;
+        }
+        #cont2{
+            width: 98%;
+            height: 90px;
+            margin: auto;
+        }
+        #cont2>p:nth-child(1){
+            font-size: 25px;
+            margin-top: -1px;
+            padding: 10px;
+            font-weight: normal;
+        }
+        #cont2>p:nth-child(2){
+            margin-top: -1px;
+            margin-left: 10px;
+        }
+        .cont3{
+            width: 96%;
+            margin-left: 20px;
+            height: 43px;
+            display: flex;
+            margin-top: 25px;
+            gap: 10px;
+        }
+        .inp1{
+            height: 80%;
+            width: 320px;
+            border-radius: 5px;
+            border-color: rgb(167, 164, 164);
+            border-width: 1px;
+            margin-left: 5px;
+        }
+        .inp2{
+            height: 80%;
+            width: 315px;
+            margin-left: 25px;
+            border-radius: 5px;
+            border-color: rgb(167, 164, 164);
+            border-width: 1px;
+        }
+        /* 2nd part */
+        #contt1{
+            width: 30%;
+            height: 100%;
+            background-color: rgb(244,244,244);
+        }
+        #contt2{
+            width: 100%;
+            height: 35px;
+        }
+        #contt2>p{
+            font-size: 25px;
+            margin-top: -1px;
+            padding: 10px;
+            font-weight: normal;
+        }
+        .but1{
+            margin-top: 30px;
+            width: 90%;
+            height: 40px;
+            margin-left: 15px;
+            text-align: center;
+            background-color: rgb(64,64,64);
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        #but2{
+            margin-top: 30px;
+            width: 90%;
+            height: 40px;
+            margin-right: 15px;
+            text-align: center;
+            background-color: rgb(64,64,64);
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        #contt3{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            color: rgb(61,61,61);
+        }
+        #contt4{
+            display: flex;
+        }
+        #contt4>p:nth-child(2){
+            margin-left: 195px;
+        }
+        #contt5{
+            display: flex;
+            margin-top: -16px;
+        }
+        #contt5>p:nth-child(2){
+            margin-left: 171px;
+        }
+        #contt6{
+            display: flex;
+            margin-top: -16px;
+        }
+        #contt6>p:nth-child(2){
+            margin-left: 128px;
+        }
+        #contt7{
+            display: flex;
+        }
+        #contt7>h3{
+            margin-top: -1px;
+        }
+        #contt7>h4{
+            margin-left: 132px;
+            margin-top: -1px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div id="container">
+            <img width="auto" height="auto" style="margin-top: 15px; margin-left: 10px;" src="./favicon.png.ico" alt="logo">
+        </div>
+        <div id="container1">
+
+            <!-- 1st part -->
+
+            <div id="cont1">
+
+                <div id="cont2">
+                    <p>Secure Checkout</p>
+                    <p>Already have a Borderfree account? Click <a href="" style="color: rgb(10, 145, 198);">here.</a></p>
+                </div>
+                <!-- hr line -->
+                <hr width="95%" style="margin-top: 20px;">
+                <p style="font-size: 25px; margin-left: 20px; margin-top: -1px;">Delivery</p>
+                <input type="text" id="email" style="width: 92%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px;" placeholder="Email">
+                <div class="cont3" >
+                    <div>
+                        <input class="inp1" id="fname" type="text" placeholder="First Name">
+                    </div>
+                    <div>
+                        <input type="text" class="inp2" id="lname" placeholder="Last Name">
+                    </div>
+                </div>
+                <input type="text" id="add" style="width: 92%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px; margin-top: 20px;" placeholder="Address">
+                <div class="cont3">
+                    <div>
+                        <input class="inp1" id="add2" type="text" placeholder="Address 2 (Optional)">
+                    </div>
+                    <div>
+                        <input type="text" id="pcode" class="inp2" placeholder="Postal Code">
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div>
+                        <input class="inp1" id="city" type="text" placeholder="City">
+                    </div>
+                    <div>
+                        <input type="text" id="region" class="inp2" placeholder="Region (Optional)">
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div>
+                        <input class="inp1" id="phone" type="number" placeholder="Phone">
+                    </div>
+                    <div>
+                        <input type="text" id="country" class="inp2" placeholder="India">
+                    </div>
+                </div><button id="btn1" class="but1" >Continue>></button>
+                <p>By placing your order, you agree to the Terms & Conditions and Privacy  Policy of
+                     Boderfree, a Global-e company, <br>
+                     Nordstrom’s international fulfillment service.Borderfree is an online merchant 
+                     that is located at 200 West 41st Street, <br>
+                     New York, NY 10036, US.</p>
+            </div>
+        
+
+            <!-- 2nd part -->
+
+            <div id="contt1">
+                <div id="contt2">
+                    <p>Your Order</p>
+                </div>
+                <button class="but1">Continue>></button>
+                <div class="contt3">
+                    <div id="contt4">
+                        <p>Items</p>
+                        <p>₹8,744</p>
+                    </div>
+                    <div id="contt5">
+                        <p>Shipping</p>
+                        <p>₹3,095</p>
+                    </div>
+                    <div id="contt6">
+                        <p>Duties & Taxes</p>
+                        <p>₹4,982</p>
+                    </div>
+                    <div id="contt7">
+                        <h3>Total</h3>
+                        <h4>(INR)₹16,821</h4>
+                    </div>
+                </div>
+                <!-- hr line -->
+                <hr width="90%">
+                <p style="margin-left: 18px; color: rgb(10, 145, 198); font-size: 14px;">+ Promo Code</p>
+                <!-- hr line -->
+                <hr width="90%;">
+                <!-- <a href="payment.html">
+                    <button id="log">Proceed</button>
+                </a> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#btn1").addEventListener("click", myfun)
+    function myfun(event) {
+        let email=document.querySelector("#email").value;
+        let fname=document.querySelector("#fname").value;
+
+    let lname=document.querySelector("#lname").value;
+    let add1=document.querySelector("#add").value;
+    let add2=document.querySelector("#add2").value;
+    let pin=document.querySelector("#pcode").value;
+    let city=document.querySelector("#city").value;
+    let region=document.querySelector("#region").value;
+    let phone=document.querySelector("#phone").value;
+    let country=document.querySelector("#country").value;
+
+    if(email=="" || fname=="" || lname=="" ||  add1=="" || add2=="" || pin=="" || city=="" || region=="" || phone=="" || country=="" ){
+            event.preventDefault();
+            alert("Please fill Details")
+        }
+
+        if(phone.length!==10){
+            event.preventDefault();
+            alert("Enter Valid Mobile Number")
+        }else{
+            let obj={
+                email,fname,lname,add1,add2,pin,city,region,phone ,country
+            }
+            localStorage.setItem("address",JSON.stringify(obj))
+            window.location.href="./payment.html"
+        }
+        
+        email.value="";
+        fname.value="";
+        lname.value="";
+        add1.value="";
+        add2.value="";
+        pin.value="";
+        city.value="";
+        region.value="";
+        phone.value="";
+        country.value="";
+        
+    }
+</script>
