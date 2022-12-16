@@ -62,5 +62,56 @@ if(recent){
     <h2>${recent.pro_price}</h2>
 `;
 }
+document.getElementById('searchButton').addEventListener('click',()=>{
+    let squery=document.getElementById('searchQ').value;
+    let SearchedProducts=document.getElementById("SearchedProducts");
+    async function getData(squery){
+        try {
+            let ask= await fetch(`https://long-plum-chicken-fez.cyclic.app/api/all?q=${squery}&_limit=5`);
+            let data = await ask.json();
+            console.log(data);
+            let htmldata=data.reduce((a,e)=>{
+                a+=`
+                <div>
+            <h2>${e.pro_brand}</h2>
+            <h2>${e.product_name}</h2>
+            <img src="${e.prod_img}" alt="${e.product_name}">
+            <h2>${e.pro_price}</h2>
+            <input id="${e.id}" type="button" value="Delete This Produuct" >
+            
+            </div>
+             `
+             return a
+            },'');
+            console.log(htmldata);
+            SearchedProducts.innerHTML=htmldata;
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    getData(squery);
+    
+});
+document.addEventListener('click',(e)=>{
+    if(Number(e.target.id)){
+       
+        setTimeout(()=>{
+            e.target.value="Product Succesfully Deleted";
+        },2000);
+         e.target.value="Delete Request Sent";
+         console.log(e.target.id);
+         async function del(pid){
+            try {
+               let res = await fetch(`https://long-plum-chicken-fez.cyclic.app/api/all/${pid}`,{
+                method: "DELETE",
+               });
 
-
+            } catch (error) {
+                console.log(error);
+            }
+           
+         }
+         del(e.target.id);
+    }
+    
+});
