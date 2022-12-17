@@ -40,7 +40,7 @@
       #order{
         width: 67%;
         height:auto;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         margin-left:200px ;
         border: 1px solid aquamarinegray;
         padding-left: 3%;
@@ -49,7 +49,7 @@
       #pay{
         display: flex;
         width: 67%;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         /* justify-content: center; */
         justify-content: space-between;
         border: 0px solid gray;
@@ -81,39 +81,7 @@
 </head>
 <body>
   
-        <div class="container">
-            <h1 style="color:rgb(201, 59, 83) ;">Shipping Address Details</h1>
-            <label class="done"> Name </label><br>
-            <input class="big"  type="text" name="" id="naam" placeholder="Enter Name"><br><br>
-            <label class="done">Mobile no.</label><br>
-            <input class="big" id="num" type="tel"placeholder="Enter Mobile Number"><br><br>
-            <label class="done">Email </label><br>
-            <input class="big" type="email" id="ema" placeholder="Enter Email" ><br><br>
-            
-            <label style="color:rgb(201, 59, 83)">Country</label><br>
-            <select class="big" name="" id="" >
-                <option value="">Select Country</option>
-                <option value="">India</option>
-                <option value="">USA</option>
-                <option value="">Turky</option>
-                <option value="">Russia</option>
-                <option value="">Brazil</option>
-                 <option value="">France</option>
-                <option value="">Caneda</option>
-                <option value="">UK</option>
-                <option value="">China</option>
-                <option value="">Mexico</option>
-
-
-            </select><br><br>
-            <label style="color:rgb(201, 59, 83)">Address Detail:</label><br>          
-            <input class="big" type="text" id="cnf" placeholder=""><br><br>
-            <label style="color:rgb(201, 59, 83)">State</label><br>          
-            <input class="big" type="text" id="cnf" placeholder="Enter your state"><br>
-               
-            <!-- <button id="but"> SIGN UP </button> -->
-    
-        </div >
+       
 
         <div id="order">
             <h2 style="color:rgb(201, 59, 83)">Order Details</h2>
@@ -176,13 +144,14 @@ window.location.href="signin1.html";
 }
   
 
-document.querySelector("#total").innerText=localStorage.getItem("total-price");
+
 document.querySelector("#place-order").addEventListener("click",function(){
     localStorage.removeItem("myproduct")
     localStorage.removeItem("total-price")
-    alert("Your Order placed successfully!..........Thanks!!! VISIT AGAIN..")
-    window.location.href="./payment_sucees.html"
+    alert("Confirm your otp first")
+    window.location.href="./payment_confirm.html"
 })
-
-
+let x=JSON.parse(localStorage.getItem("totalPrice"))
+console.log(x[1])
+document.querySelector("#total").innerText=x[1]
 </script>

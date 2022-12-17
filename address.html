@@ -17,7 +17,7 @@
         }
         #container1{
             border: 1px solid black;
-            width: 70%;
+            width: 80%;
             height: 1200px;
             margin: auto;
             display: flex;
@@ -143,12 +143,19 @@
             margin-top: -1px;
             padding: 2px;
         }
+        #mytotal{
+            margin-left: 20px;
+        }
+        #small{
+            font-size:15px;
+            color: grey;
+        }
     </style>
 </head>
 <body>
     <div id="cont">
         <div id="container">
-            <img width="auto" height="auto" style="margin-top: 15px; margin-left: 10px;" src="./favicon.png.ico" alt="logo">
+            <img width="auto" height="auto" style="margin-top: 15px; margin-left: 10px;" src="./poshstorm.png" alt="logo">
         </div>
         <div id="container1">
 
@@ -163,7 +170,7 @@
                 <!-- hr line -->
                 <hr width="95%" style="margin-top: 20px;">
                 <p style="font-size: 25px; margin-left: 20px; margin-top: -1px;">Delivery</p>
-                <input type="text" id="email" style="width: 92%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px;" placeholder="Email">
+                <input type="text" id="email" style="width: 90%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px;" placeholder="Email">
                 <div class="cont3" >
                     <div>
                         <input class="inp1" id="fname" type="text" placeholder="First Name">
@@ -172,7 +179,7 @@
                         <input type="text" class="inp2" id="lname" placeholder="Last Name">
                     </div>
                 </div>
-                <input type="text" id="add" style="width: 92%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px; margin-top: 20px;" placeholder="Address">
+                <input type="text" id="add" style="width: 90%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px; margin-top: 20px;" placeholder="Address">
                 <div class="cont3">
                     <div>
                         <input class="inp1" id="add2" type="text" placeholder="Address 2 (Optional)">
@@ -197,7 +204,7 @@
                         <input type="text" id="country" class="inp2" placeholder="India">
                     </div>
                 </div><button id="btn1" class="but1" >Continue>></button>
-                <p>By placing your order, you agree to the Terms & Conditions and Privacy  Policy of
+                <p id="small">By placing your order, you agree to the Terms & Conditions and Privacy  Policy of
                      Boderfree, a Global-e company, <br>
                      Nordstrom’s international fulfillment service.Borderfree is an online merchant 
                      that is located at 200 West 41st Street, <br>
@@ -215,19 +222,19 @@
                 <div class="contt3">
                     <div id="contt4">
                         <p>Items</p>
-                        <p>₹8,744</p>
+                        <p id="myitems">0</p>
                     </div>
                     <div id="contt5">
                         <p>Shipping</p>
-                        <p>₹3,095</p>
+                        <p>free</p>
                     </div>
                     <div id="contt6">
                         <p>Duties & Taxes</p>
-                        <p>₹4,982</p>
+                        <p>free</p>
                     </div>
                     <div id="contt7">
                         <h3>Total</h3>
-                        <h4>(INR)₹16,821</h4>
+                        <h4 id="mytotal">(INR)₹16,821</h4>
                     </div>
                 </div>
                 <!-- hr line -->
@@ -286,4 +293,12 @@
         country.value="";
         
     }
+    let x=JSON.parse(localStorage.getItem("totalPrice"))
+console.log(x[1])
+document.querySelector("#mytotal").innerText="(INR)"+x[1]
+
+let y=JSON.parse(localStorage.getItem("cartItems"))
+// console.log(y[1])
+document.querySelector("#myitems").innerText=y.length
+
 </script>
