@@ -1,3 +1,4 @@
+let Name = document.getElementById('f_name');
 let Email = document.getElementById('e-mail');
 let password = document.getElementById('password');
 let signIn = document.getElementById('signIn');
@@ -41,6 +42,7 @@ function saveIt(){
 signUp.addEventListener('click', ()=>{
     let array = JSON.parse(localStorage.getItem("data")) || [];
 
+    newuserbysign.Name = Name.value; 
     newuserbysign.Email=Email.value;
     newuserbysign.Password=password.value;
 
