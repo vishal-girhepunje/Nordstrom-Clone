@@ -17,7 +17,7 @@ function displayer(){
 let sliderarrimg=[]
 for(let j=0;j<7;j++){
     sliderarrimg
-    .push(`home_images/slider${j+1}.png`)
+    .push(`home_images/slider${j+1}.jpeg`)
 }
 let vv=0
 console.log(sliderarrimg)

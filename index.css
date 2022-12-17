@@ -3,6 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     width: 100%;
     background-color: white;
@@ -257,6 +260,7 @@ a:hover{
 }
 .sixthmain img{
     width: 300px;
+    height: 150px;
 }
 .seventhmain{
     margin-top: 40px;
