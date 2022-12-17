@@ -1,0 +1,118 @@
+#main_div_cart{
+        width: 75%;
+        margin: auto;
+       
+}
+#cart_items>div>img{
+    width: 8%;
+    margin-bottom: 10px;
+}
+#cart_items>div>img:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+}
+#shopping_bag{
+    display: flex;
+    flex-direction: row;
+}
+#shopping_bag>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #e3e3e3;
+border-top: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+height: 50px;
+width: 300px;
+}
+#shopping_bag>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(192, 190, 190);
+    border-right: 1px solid rgb(192, 190, 190);
+    border-bottom: 1px solid rgb(192, 190, 190);
+    width: 300px;
+    height: 50px;
+    }
+
+    #items_not_on_hold{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        
+    }
+    #items_not_on_hold>div:nth-child(1){
+        margin-bottom: 6px;
+    }
+    #choose_gift{
+        display: flex;
+        margin-bottom: 5px;
+        width: 75%;
+        border-bottom: 2px solid rgb(218, 217, 217);
+    }
+
+    #cart_items>div{
+        border-bottom: 2px solid rgb(218, 217, 217);
+        padding: 15px 0px;
+        width: 75%;
+    }
+    #cart_items>div>h2{
+        margin-bottom: 15px;
+    }
+    #cart_items>div>p{
+        margin-bottom: 15px;
+    }
+   #check_out{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 20px;
+   }
+   #check_out>div:nth-child(1){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+   }
+   #check_out>div:nth-child(1)>div{
+    margin-bottom: 17px;
+   }
+   a{
+    color: #3175b4;
+    font-size: 1.1rem;
+   }
+   button{
+    width: 350px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    margin-top: 15px;
+   }
+   button:hover{
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+   }
+   #subtotal_price{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+   }
+   #accepted_payments{
+    display: flex;
+   
+   }
+   #accepted_payments>img{
+    height: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   
+   }
+  
+   #remove{
+   color: #5185b2;
+   }

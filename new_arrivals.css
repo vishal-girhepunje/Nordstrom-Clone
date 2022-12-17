@@ -66,6 +66,7 @@ nav{
 }
 .left_panel_sorting:hover{
     cursor: pointer;
+    
 }
 .left_panel_sorting:last-child{
     border-bottom: 1px solid #e6e6e6;   
@@ -90,6 +91,7 @@ nav{
     width: 96%;
     font-size: .7rem;
 }
+
 #mens_new_arrival{
     margin-top: 25px;
     font-size: .7rem;
@@ -100,8 +102,10 @@ nav{
 }
 #all_new{
     display: flex;
-    border-bottom: 2px solid rgb(190, 189, 189);
-    
+    border-bottom: 2px solid rgb(190, 189, 189);   
+}
+#all_new:hover{
+    cursor: pointer;
 }
 #all_new>span{
     font-size: 1.1rem;
@@ -129,3 +133,8 @@ nav{
 #loading_{
     font-size: large;
 }
+#size>div:hover{
+    background-color: rgb(216, 213, 213,0.4);
+    cursor: pointer;
+}
+
