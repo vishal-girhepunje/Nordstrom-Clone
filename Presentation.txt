@@ -1,0 +1,20 @@
+Introduction
+hello Everyone
+my name is krishna. The Collaborative project that I am going to present today is a website named Nordstorm.
+Our team of 5 members including
+Vishal 
+Shubham
+Animesh
+Ankit
+and myself 
+have prepared this clone of Nordstorm in the last 4 days. We have named it as Poshstorm.And, Now WE are going to present it.
+So, What is Nordstorm?
+Nordstorm is an e commerce website that offers a wide variety of designer clothing and footwear, cosmetics, and home goods. 
+
+Before starting the presentaion, I would like to thank you for this oppurtunity to present this project.
+Now, my friend shubham will explain you The homepage of our website.over to you shubham.
+
+Ending
+The tech stack used by us is Html, css and JavaScript. My team has also worked to improve the user experience by speeding up the webpage. Now, I would like to show the codebase of our team project. We have used github to collab as well as manage our codebase.
+So, thats all about this project. Thank you very much for this great oppurtunity. WE are open to any kind of questions or suggestions regarding this project. 
+Thank You
