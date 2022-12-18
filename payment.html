@@ -1,194 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        
-       .container{
-        background-color: rgb(240, 248, 129);
-         width: 70%;
-         border:2px solid blue;
-         height:500px;
-         margin-top: 20px;
-         margin-left: 200px;
-         text-align: center;
-         border-radius: 20px;
-         /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
-         border: 1px solid rgb(230, 224, 224);
-         /* text-align: center; */
-         /* height: 100vh; */
-         border: 1px solid black;
-      }
-      .container>#but{
-        width: 300px;
-        height: 25px;
-        /* border-radius: 20px; */
-        background-color: rgb(177, 18, 18);
-        color: white;
-        font-weight:bold;
-        font-size: 20px;
-        border: 1px solid white;
-        border: 1px solid black;
-      }
-      .big{
-        width:60%;
-        height:25px;
-        text-align: center;
-        border: 1px solid black;
-        
-      }
-      #order{
-        width: 70%;
-        margin: auto;
-        padding: 5px 0px 5px 0px;
-        text-align: center;
-        border-radius: 5px;
-        /* border: 1px solid black; */
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-      }
-      #pay{
-        display: flex;
-        width: 70%;
-        justify-content: space-between;
-        margin: auto;
-        margin-top:20px ;
-        border-radius: 5px;
-        
-        /* border: 1px solid black; */
-      }
-      #tab{
-        margin-left: 10%;
-        /* border: 1px solid black; */
-      }
-      #break{
-        margin-top: 15%;
-        margin-right: 10%;
-        /* margin-bottom: 2%; */
-        /* border: 1px solid black; */
-        width: 30%;
-      }
-      /* #break>input{
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border-bottom: 3px solid black;
+}
+.top{
+    
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    
+    
+
+}
+.top img{
+    height: 20px;
+    width: 20px;
+}
+.top h4{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.top a{
+    text-decoration: none;
+    color: green;
+}
+.firstnav{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.logo>img{
+    height: 80px;
+    width: 80px;
+    border-radius: 3%;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    border: 1px solid black;
+    height: 40px;
+    align-items:center;
+}
+#searchicon{
+    height: 20px;
+    width: 20px;
+}
+
+
+.search input{
+    margin-left: 8px;
+    border: none;
+    width: 300px;
+    height: 90%;
+    text-align: left;
+    
+}
+.search input:focus{
+    outline: none;
+}
+.sign{
+    height: 30px;
+    
+}
+.sign a{
+    display: flex;
+    
+}
+
+.hovering1{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    position: absolute;
+    left: 640px;
+    top: 110px;
+    
+}
+.hovering1>div{
+    margin-top: 5px;
+}
+/* .sign:hover > .hovering1{
+    display: flex;
+} */
+
+
+.store img{
+    height: 40px;
+    
+}
+.purchase img{
+    height: 40px;
+     
+}
+.cart img{
+    height: 40px;
+     
+}
+    .container {
+      background-color: rgb(240, 248, 129);
+      width: 70%;
+      border: 2px solid blue;
+      height: 500px;
+      margin-top: 20px;
+      margin-left: 200px;
+      text-align: center;
+      border-radius: 20px;
+      /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+      border: 1px solid rgb(230, 224, 224);
+      /* text-align: center; */
+      /* height: 100vh; */
+      border: 1px solid black;
+    }
+
+    .container>#but {
+      width: 300px;
+      height: 25px;
+      /* border-radius: 20px; */
+      background-color: rgb(177, 18, 18);
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border: 1px solid white;
+      border: 1px solid black;
+    }
+
+    .big {
+      width: 60%;
+      height: 25px;
+      text-align: center;
+      border: 1px solid black;
+
+    }
+
+    #order {
+      width: 70%;
+      margin: auto;
+      margin-top: 140px;
+      padding: 5px 0px 5px 0px;
+      text-align: center;
+      border-radius: 5px;
+      /* border: 1px solid black; */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    #pay {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+
+      /* border: 1px solid black; */
+    }
+
+    #tab {
+      margin-left: 10%;
+      /* border: 1px solid black; */
+    }
+
+    #break {
+      margin-top: 15%;
+      margin-right: 10%;
+      /* margin-bottom: 2%; */
+      /* border: 1px solid black; */
+      width: 30%;
+    }
+
+    /* #break>input{
         width: 100%;
         height: 25px;
       } */
-      .done{
-        color: rgb(228, 62, 62);
-        /* border: 1px solid black; */
-      }
-      .card {
+    .done {
+      color: rgb(228, 62, 62);
+      /* border: 1px solid black; */
+    }
+
+    .card {
       width: 100%;
       height: 25px;
       /* border: 1px solid red; */
-      }
-      #place-order{
-        text-align: center;
-        margin-top: 30px;
-        margin-left: 45%;
-        padding: 10px 20px 10px 20px;
-        background-color: rgb(255, 63, 108);
-        border: 0px;
-        color: white;
+    }
 
-      }
-      #place-order:hover{
-          cursor: pointer;
-          background-color: rgb(214, 35, 76);
-      }
-      
-    </style>
+    #place-order {
+      text-align: center;
+      margin-top: 30px;
+      margin-left: 45%;
+      padding: 10px 20px 10px 20px;
+      background-color: rgb(255, 63, 108);
+      border: 0px;
+      color: white;
+
+    }
+
+    #place-order:hover {
+      cursor: pointer;
+      background-color: rgb(214, 35, 76);
+    }
+  </style>
 </head>
+
 <body>
-  
-       
-
-        <div id="order">
-            <h1 >Order Details</h1>
-       
-        <h3>Order Total : &nbsp; ₹ &nbsp<span id="total">0</span></h3>
-                
+  <header>
+    <div class="top">
+        <h4 class><b>Shipping outside of the U.S. or Canada? </b><a
+                href="https://www.nordstrom.com/browse/customer-service/international-orders?jid=j011535-13614&cid=00000&cm_sp=merch-_-multi-div_13614_j011535-_-swptcos_corp_persnav_info&#anchor-link-shipping-charges">Learn
+                About International Shipping</a></h4>
+        <div class="country"><img src="home_images/india.png" alt=""><b><u>INDIA</u></b></div>
+    </div>
+    <div class="firstnav">
+        <div class="logo"><img src="home_images/logo 4.png" alt=""></div>
+        <div class="search">
+            <img id="searchicon" src="home_images/search.png" alt="">
+            <input id="searchfun" type="text" placeholder="Search for products or brands">
         </div>
-
-        <div id="pay">
-            <div id="tab">
-                <h1>Payment Information</h1>
-                <img style="width:140px" src="https://www.nicepng.com/png/full/54-542683_credit-card-pay-now-visa-and-mastercard-accepted.png" alt="">
-                
-                <h4>Credit Card Number:</h4>
-                <h4>Card Type</h4>
-                <h4>Expiration Date:</h4>
-                <h4>Security Code:</h4>
+        <div class="sign">
+            <a href="./signIn.html"> Sign In</a>
+            <div class="hovering1">
+                <button><b>Sign In|Create Account</b></button>
+                <hr>
+                <h3><b>Your Account</b></h3>
+                <hr>
+                <div class="youracc1">Purchase</div>
+                <hr>
+                <div class="youracc2">Wish List</div>
+                <hr>
+                <div class="youracc3">The Poshy Club Rewards</div>
+                <hr>
+                <div class="youracc4">Shipping Address</div>
+                <hr>
+                <div class="youracc5">Payment Methods</div>
+                <hr>
+                <div class="youracc6">Your Stylist</div>
+                <hr>
+                <div class="youracc7">Pay & Manage Poshstorm</div>
 
             </div>
-            
-           <div id="break"><input class="card" type="number" placeholder="Card Number" required><br><br>
-            <select class="card" name="" id="" >
-                <option value="">Select Card</option>
-                <option value="">Visa</option>
-                <option value="">MasterCard</option>
 
-            </select><br><br>
-            <input class="card" required type="text" placeholder="MM/YYYY"><br><br>
-            <input class="card" required type="text" placeholder="Security Code">
-          </div>
 
         </div>
-        <br>
-        <button id="place-order">Place Order</button>
+        <div class="store">
+            <a href="#"><img src="home_images/shopping-bag.png" alt="">Store</a>
+        </div>
+        <div class="purchase">
+            <a href="#"><img src="home_images/cart.png" alt="">Purchase</a>
+        </div>
+        <div class="cart">
+            <a id="numOfItemInCart" href="#"><img src="home_images/shopping-cart.png" alt="">0</a>
+        </div>
+
+
+
+
+    </div>
+    <hr>
+</header>
+
+
+
+  <div id="order">
+    <h1>Order Details</h1>
+
+    <h3>Order Total : &nbsp; ₹ &nbsp<span id="total">0</span></h3>
+
+  </div>
+
+  <div id="pay">
+    <div id="tab">
+      <h1>Payment Information</h1>
+      <img style="width:140px"
+        src="https://www.nicepng.com/png/full/54-542683_credit-card-pay-now-visa-and-mastercard-accepted.png" alt="">
+
+      <h4>Credit Card Number:</h4>
+      <h4>Card Type</h4>
+      <h4>Expiration Date:</h4>
+      <h4>Security Code:</h4>
+
+    </div>
+
+    <div id="break"><input class="card" id="cardn" type="number" placeholder="Card Number" required><br><br>
+      <select class="cards" name="" id="cards">
+        <option value="0">Select Card</option>
+        <option value="1">Visa</option>
+        <option value="2">MasterCard</option>
+
+      </select><br><br>
+      <input class="card" id="carddate" required type="date" placeholder="MM/YYYY"><br><br>
+      <input class="card" id="cardnsc" required type="text" placeholder="Security Code">
+    </div>
+
+  </div>
+  <br>
+  <button id="place-order">Place Order</button>
+  <div style="display: flex;background-color: #f9f9f9;justify-content: space-around; height: 400px;margin-top: 25px;" class="footer">
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>Customer Service</h3>
+        <p>Contact Us</p>
+        <p>Order Stutus</p>
+        <p>Shipping</p>
+        <p>Return Policy</p>
+        <p>Price Adjustments</p>
+        <p>Gifts Cards</p>
+        <p>FAQ</p>
+        <p>Product Recalls</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>About Us</h3>
+        <p>All Brands</p>
+        <p>Careers</p>
+        <p>Corporate Social <br>Responsibility </p>
+        <p>Diversity,Inclusion &<br>Belongings</p>
+        <p>Get Email Updates</p>
+        <p>NordStorm Blog</p>
+        <p>The Thread</p>
+        <p>Nordy Podcat</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>Stores & Service</h3>
+        <p>Find a Store</p>
+        <p>Free Style Help</p>
+        <p>Alterations & <br> Tailoring</p>
+        <p>Pop-In Shop</p>
+        <p>Virtual Events</p>
+        <p>Spa NordStorm</p>
+        <p>NordStorm Restaurants</p>
+        <p>NordStorm Local</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content:flex-start;">
+        <h3 style="margin-top: 20px;">NordStorm Card & <br>Rewards</h3>
+        <p style="margin-top: 20px;">The Nordy Club</p>
+        <p style="margin-top: 20px;">Pay My Bill</p>
+        <p style="margin-top: 20px;">Manage My <br>NordStorm card</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>NordStorm, Inc</h3>
+        <p>NordStorm Rack</p>
+        <p>NordStorm Canada</p>
+        <p>Investor Relations</p>
+        <p>Press Releases</p>
+        <p>NordStorm Media <br>Network</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: flex-start; ">
+        <div style="display: flex; align-items: center;margin-top: 20px;">
+            <a href="https://www.nordstrom.com/browse/about/nordstrom-apps?origin=footer&cm_sp=corp-_-corp_CustomerService-_-globalfooternav_app"><img width="40px" src="home_images/playstore.png" alt=""></a>
+            <p>Get our apps</p>
+        </div>
+        <div style="display: flex; margin-top: 100px;">
+            <a href="https://www.instagram.com/nordstrom/?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_instagram"><img style="margin-left: 6px; " width="23px" src="home_images/instagramico.png" alt=""></a>
+            <a href="https://www.pinterest.com/nordstrom/?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_pinterest"><img style="margin-left: 6px;" width="23px" src="home_images/pinterest.png" alt=""></a>
+            <a href="http://twitter.com/nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_twitter"><img style="margin-left: 6px;" width="23px" src="home_images/twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/Nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_facebook"><img style="margin-left: 6px;" width="23px" src="home_images/facebook.png" alt=""></a>
+        </div>
+
+    </div>
+    <button id="top" style="color: white;background-color: black;width: 60px;height: 60px;align-self: center;">^ <br> Go to Top</button>
+
+</div>
+<div style="height: 100px;"></div>
 </body>
+
 </html>
-    <script>
+<script>
 
-      let card_num = document.getElementsByClassName('card');
-      let mon_day = document.getElementsByClassName('card');
-      let code = document.getElementsByClassName('card');
+  let input1 = document.querySelector(".cardn")
+  let input2 = document.querySelector(".cards")
+  let input3 = document.querySelector(".carddate")
+  let input4 = document.querySelector(".cardnsc")
+  document.querySelector("#place-order").addEventListener("click", function () {
+    localStorage.removeItem("bag")
+    localStorage.removeItem("totalPrice")
 
+   window.location.href="./payment_confirm.html"
 
-
-    document.querySelector("button").addEventListener("click", fun2);
-
-let arr= JSON.parse(localStorage.getItem(""))||[];
-
-function fun2() {
-    let name = document.querySelector("").value;
-    // let last = document.querySelector("#last").value;
-    let email = document.querySelector("#").value;
-    let mobile = document.querySelector("#").value;
-    let password = document.querySelector("#").value;
-    let confirm = document.querySelector("#").value;
-   
-    let dataobj={
-        name,
-        // last,
-        email,
-        mobile,
-        password,
-        confirm,
-
-    };
-arr.push(dataobj);
-localStorage.setItem("cart",JSON.stringify(arr))
-window.location.href="signin1.html";
-}
-  
-
-
-document.querySelector("#place-order").addEventListener("click",function(){
-    localStorage.removeItem("myproduct")
-    localStorage.removeItem("total-price")
-
-    if(card_num.value !== "" || card_num.value !== null){
-      alert("Confirm your otp first")
-      window.location.href="./payment_confirm.html"
-    }else{
-      alert("Enter details first!")
-    }
-    
-})
-let x=JSON.parse(localStorage.getItem("totalPrice"))
-console.log(x[1])
-document.querySelector("#total").innerText=x[1]
+  })
+  let x = (localStorage.getItem("totalPrice"))
+  console.log(x)
+  document.querySelector("#total").innerText = x
 </script>

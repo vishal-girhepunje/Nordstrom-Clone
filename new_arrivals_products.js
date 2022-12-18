@@ -1,6 +1,6 @@
 let url = "https://long-plum-chicken-fez.cyclic.app/api/all"
 let stack = []
-let cartItems =JSON.parse(localStorage.getItem("cartItems"))||[]
+let bag =JSON.parse(localStorage.getItem("bag"))||[]
  
 fetch(url)
     .then((res) => res.json())
@@ -129,8 +129,9 @@ displayProducts = (data) => {
                   icon.setAttribute("class", "fa-solid fa-bag-shopping")
                     button.innerText = "Add To Bag "
                 button.addEventListener("click", () => { 
-                cartItems.push(element);
-                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                bag.push(element);
+                localStorage.setItem("bag", JSON.stringify(bag));
+                alert("Item Added to Cart")
 
              })
                   button.append(icon)
@@ -279,6 +280,7 @@ size.addEventListener("click", () => {
 
 // 88888888888888************SEARCH FUNCTIONALITY**************************
 function searchall() { 
+    
     let x = document.querySelector("input").value;
   
    

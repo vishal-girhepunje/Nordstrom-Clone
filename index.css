@@ -1,0 +1,354 @@
+*{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border-bottom: 3px solid black;
+}
+.top{
+    
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    
+    
+
+}
+.top img{
+    height: 20px;
+    width: 20px;
+}
+.top h4{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.top a{
+    text-decoration: none;
+    color: green;
+}
+.firstnav{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.logo>img{
+    height: 80px;
+    width: 80px;
+    border-radius: 3%;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    border: 1px solid black;
+    height: 40px;
+    align-items:center;
+}
+#searchicon{
+    height: 20px;
+    width: 20px;
+}
+
+
+.search input{
+    margin-left: 8px;
+    border: none;
+    width: 300px;
+    height: 90%;
+    text-align: left;
+    
+}
+.search input:focus{
+    outline: none;
+}
+.sign{
+    height: 30px;
+    
+}
+.sign a{
+    display: flex;
+    
+}
+
+.hovering1{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    position: absolute;
+    left: 640px;
+    top: 110px;
+    
+}
+.hovering1>div{
+    margin-top: 5px;
+}
+/* .sign:hover > .hovering1{
+    display: flex;
+} */
+
+
+.store img{
+    height: 40px;
+    
+}
+.purchase img{
+    height: 40px;
+     
+}
+.cart img{
+    height: 40px;
+     
+}
+/* Header Css done Here....................................................................................... */
+.main{
+    margin-top: 160px;
+}
+.firstmain{
+    display: flex;
+    justify-content: space-around;
+}
+.droparr{
+    margin-top: 20px;
+
+}
+#dropper1,#dropper2,#dropper3,#dropper4,#dropper5,#dropper6,#dropper7,#dropper8{
+    cursor: pointer;
+}
+#dropper1:hover,#dropper2:hover,#dropper3:hover,#dropper4:hover,#dropper5:hover,#dropper6:hover,#dropper7:hover,#dropper8:hover{
+    border-bottom: 2px solid black;
+}
+
+#drop1{
+    display: none;
+
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.drop1a,.drop1b,.drop1c,.drop1d,.drop1e{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+}
+#drop2{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.drop2a,.drop2b,.drop2c,.drop2d,.drop2e{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+}
+#drop3{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.drop3a,.drop3b,.drop3c,.drop3d,.drop3e{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+}
+#drop4{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}
+#drop5{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}#drop6{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}
+#drop7{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}
+#drop8{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.secondmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #434343;
+}
+.secondmain img{
+    margin: 30px;
+    height: 20px;
+    width: 300px;
+    
+}
+.thirdmain img{
+    width: 90%;
+    height: 300px;
+}
+.fourthmain{
+    cursor: pointer;
+}
+.fourthmain img{
+    width:90% ;
+    height: 300px;
+}
+.fifthmain{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#cardimg{
+    margin-left: 90px;
+    height: 150px;
+}
+.sixthmain{
+    background-color: #3441b6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    height: 150px;
+}
+.sixthmain img{
+    width: 300px;
+    height: 150px;
+}
+.seventhmain{
+    margin-top: 40px;
+}
+.seventhmain img{
+    width: 100%;
+}
+.eighthmain{
+    margin-top: 30px;
+}
+.eighthmain img{
+    width: 95%;
+}
+.ninethmain{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: flex-end;
+    background-color: red;
+    color: white;
+}
+
+#moving2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+#moving2 img{
+    width: 600px;
+    
+}
+.moving2dy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    
+    
+
+    
+}
+#prev{
+    visibility: hidden;
+   font-weight: bolder;
+   font-size:330%;
+   
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+
+}
+#next{
+    visibility: hidden;
+    font-weight: bolder;
+    font-size:330%;
+    position: relative;
+    right: 30px;
+   
+    cursor: pointer;
+ 
+ }
+ #moving2:hover > #prev{
+    visibility: visible;
+ }
+ #moving2:hover > #next{
+    visibility: visible;
+ }
+ .eleventh{
+    margin-top: 30px;
+ }
+ .eleventhcont{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    
+ }
+ .eleventhcont img{
+    width: 90%;
+ }
+ .eleventhcont div{
+    margin-right: 20px;
+    width: 22%;
+
+ }
+
+

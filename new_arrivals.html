@@ -13,23 +13,63 @@
 </head>
 <body>
     <!-- ******************************Navbar********************************************* -->
-   <header>
-    <div id="origin_country_bar">
-        <div  id="center_text">
-            <p><strong>There's still time to shop! Find the best gifts, all in one place.&nbsp;</strong></p>
-            <a href="#">Shop Gifts</a>
+    <header>
+        <div class="top">
+            <h4 class><b>Shipping outside of the U.S. or Canada? </b><a
+                    href="https://www.nordstrom.com/browse/customer-service/international-orders?jid=j011535-13614&cid=00000&cm_sp=merch-_-multi-div_13614_j011535-_-swptcos_corp_persnav_info&#anchor-link-shipping-charges">Learn
+                    About International Shipping</a></h4>
+            <div class="country"><img src="home_images/india.png" alt=""><b><u>INDIA</u></b></div>
         </div>
-        <div id="country_name&flag" >
+        <div class="firstnav">
+            <div class="logo"><img src="home_images/logo 4.png" alt=""></div>
+            <div class="search">
+                <img id="searchicon" src="home_images/search.png" alt="">
+                <input id="searchfun" onkeyup="searchall()" type="text" placeholder="Search for products or brands">
+            </div>
+            <div class="sign">
+                <a href="./signIn.html"> Sign In</a>
+                <div class="hovering1">
+                    <button><b>Sign In|Create Account</b></button>
+                    <hr>
+                    <h3><b>Your Account</b></h3>
+                    <hr>
+                    <div class="youracc1">Purchase</div>
+                    <hr>
+                    <div class="youracc2">Wish List</div>
+                    <hr>
+                    <div class="youracc3">The Poshy Club Rewards</div>
+                    <hr>
+                    <div class="youracc4">Shipping Address</div>
+                    <hr>
+                    <div class="youracc5">Payment Methods</div>
+                    <hr>
+                    <div class="youracc6">Your Stylist</div>
+                    <hr>
+                    <div class="youracc7">Pay & Manage Poshstorm</div>
+
+                </div>
+
+
+            </div>
+            <div class="store">
+                <a href="#"><img src="home_images/shopping-bag.png" alt="">Store</a>
+            </div>
+            <div class="purchase">
+                <a href="#"><img src="home_images/cart.png" alt="">Purchase</a>
+            </div>
+            <div class="cart">
+                <a id="numOfItemInCart" href="./addToBag.html"><img src="home_images/shopping-cart.png" alt="">0</a>
+            </div>
+
+
+
 
         </div>
-    </div>
-    <nav>
-        <input type="text" onkeyup="searchall()">
-    </nav>
-   </header>
+        <hr>
+    </header>
 
    <!-- ********************************HOME/MEN/NEW ARRIVAL LINE************************** -->
-   <div id="home_men_new">
+   <div id="home_men_new" style="margin-top: 138px;"> 
         <span>Home</span>
         <span>/</span>
         <span>Men</span>
@@ -88,6 +128,7 @@
             <div id="all_products"></div>
         </div>
    </div>
+   
 </body>
 </html>
 <script src="./new_arrivals.js"></script>
