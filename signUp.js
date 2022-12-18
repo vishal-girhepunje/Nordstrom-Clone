@@ -12,7 +12,7 @@ signIn.addEventListener('click', ()=>{
 });
 
 function saveIt(){
-    if(Email.value==='admin@gmail.com' && password.value==='admin123'){
+    if(Email.value==='admin' && password.value==='admin'){
         alert("Welcome! ADMIN");
         window.open('admin.html', '_blank');
         Email.value="";
