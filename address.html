@@ -4,88 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shipping Details</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         #cont{
             width: 100%;
             height: auto;
+            border: 1px solid black;
         }
         #container{
             display: flex;
             width: 100%;
-            height: 95px;
+            height: 90px;
+            /* border: 1px solid red; */
+            background-color: #000000;
+            color: white;
+            margin-bottom: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
         #container1{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 80%;
-            height: 1200px;
             margin: auto;
             display: flex;
-            border-right: none;
-            border-bottom: none;
-            border-left: none;
         }
         #cont1{
             width: 70%;
-            height: 100%;
+            margin-top: 5px;
+            /* margin-left: 10px; */
+            /* height: 100%; */
+            /* border: 1px solid black; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
         #cont2{
-            width: 98%;
-            height: 90px;
-            margin: auto;
+            width: 100%;
+            /* height: 90px; */
+            /* margin: auto; */
+            /* border: 1px solid black; */
         }
         #cont2>p:nth-child(1){
+            width: auto;
             font-size: 25px;
             margin-top: -1px;
-            padding: 10px;
+            padding-left: 20px;
+            /* height: auto; */
             font-weight: normal;
+            /* border: 1px solid black; */
         }
         #cont2>p:nth-child(2){
             margin-top: -1px;
-            margin-left: 10px;
+            padding-left: 20px;
+            /* border: 1px solid black; */
+            width: auto;
+        }
+        #email{
+            margin-left: 25px;
+            height: 30px;
+            width: 91%;
+        }
+        #add{
+            margin-left: 25px;
+            height: 30px;
+            width: 91%;
+            margin-top: 20px;
         }
         .cont3{
-            width: 96%;
+            /* width: 95%; */
             margin-left: 20px;
             height: 43px;
             display: flex;
-            margin-top: 25px;
-            gap: 10px;
+            margin-top: 20px;
+            gap: 5px;
+            /* border: 1px solid black; */
         }
         .inp1{
-            height: 80%;
+            height: 30px;
             width: 320px;
-            border-radius: 5px;
-            border-color: rgb(167, 164, 164);
-            border-width: 1px;
+            /* border-radius: 5px; */
+            /* border-color: rgb(167, 164, 164); */
+            /* border-width: 1px; */
             margin-left: 5px;
+            /* border: 1px solid black; */
         }
         .inp2{
-            height: 80%;
+            height: 30px;
             width: 315px;
             margin-left: 25px;
-            border-radius: 5px;
-            border-color: rgb(167, 164, 164);
-            border-width: 1px;
+            /* border-radius: 5px; */
+            /* border-color: rgb(167, 164, 164); */
+            /* border-width: 1px; */
+            /* border: 1px solid black; */
         }
         /* 2nd part */
         #contt1{
             width: 30%;
-            height: 100%;
+            margin-left: 10px;
+            /* height: 100%; */
             background-color: rgb(244,244,244);
+            /* border: 1px solid black; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
         #contt2{
             width: 100%;
-            height: 35px;
+            /* height: 35px; */
+            text-align: center;
+            /* border: 1px solid black; */
         }
         #contt2>p{
             font-size: 25px;
-            margin-top: -1px;
-            padding: 10px;
+            /* margin-top: -1px; */
+            /* padding: 10px; */
             font-weight: normal;
+            /* border: 1px solid black; */
         }
         .but1{
             margin-top: 30px;
+            width: 92%;
+            height: 45px;
+            margin-left: 25px;
+            text-align: center;
+            background-color: rgb(64,64,64);
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            /* border: 1px solid red; */
+        }
+        .but2{
+            margin-top: 25px;
             width: 90%;
             height: 40px;
             margin-left: 15px;
@@ -94,17 +139,7 @@
             border-radius: 5px;
             color: white;
             cursor: pointer;
-        }
-        #but2{
-            margin-top: 30px;
-            width: 90%;
-            height: 40px;
-            margin-right: 15px;
-            text-align: center;
-            background-color: rgb(64,64,64);
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
+            /* border: 1px solid red; */
         }
         #contt3{
             width: 90%;
@@ -114,26 +149,39 @@
         }
         #contt4{
             display: flex;
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
         }
         #contt4>p:nth-child(2){
             margin-left: 195px;
+            
         }
         #contt5{
             display: flex;
-            margin-top: -16px;
+            /* margin-top: -16px; */
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
         }
         #contt5>p:nth-child(2){
             margin-left: 171px;
         }
         #contt6{
             display: flex;
-            margin-top: -16px;
+            /* margin-top: -16px; */
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
         }
         #contt6>p:nth-child(2){
             margin-left: 128px;
         }
         #contt7{
             display: flex;
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
         }
         #contt7>h3{
             margin-top: -1px;
@@ -148,7 +196,10 @@
         }
         #small{
             font-size:15px;
+            line-height: 20px;
+            text-align: left;
             color: grey;
+            margin-left: 25px;
         }
     </style>
 </head>
@@ -156,6 +207,7 @@
     <div id="cont">
         <div id="container">
             <img width="auto" height="auto" style="margin-top: 15px; margin-left: 10px;" src="./poshstorm.png" alt="logo">
+            <h2><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Enter your shipping details</h2>
         </div>
         <div id="container1">
 
@@ -170,7 +222,7 @@
                 <!-- hr line -->
                 <hr width="95%" style="margin-top: 20px;">
                 <p style="font-size: 25px; margin-left: 20px; margin-top: -1px;">Delivery</p>
-                <input type="text" id="email" style="width: 90%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px;" placeholder="Email">
+                <input type="text" id="email" placeholder="Email">
                 <div class="cont3" >
                     <div>
                         <input class="inp1" id="fname" type="text" placeholder="First Name">
@@ -179,7 +231,7 @@
                         <input type="text" class="inp2" id="lname" placeholder="Last Name">
                     </div>
                 </div>
-                <input type="text" id="add" style="width: 90%; height: 35px; border-radius: 5px; border-color: rgb(167, 164, 164); border-width: 1px; margin-left: 25px; margin-top: 20px;" placeholder="Address">
+                <input type="text" id="add" placeholder="Address">
                 <div class="cont3">
                     <div>
                         <input class="inp1" id="add2" type="text" placeholder="Address 2 (Optional)">
@@ -203,7 +255,7 @@
                     <div>
                         <input type="text" id="country" class="inp2" placeholder="India">
                     </div>
-                </div><button id="btn1" class="but1" >Continue>></button>
+                </div><button id="btn1" class="but1">Continue>></button>
                 <p id="small">By placing your order, you agree to the Terms & Conditions and Privacy  Policy of
                      Boderfree, a Global-e company, <br>
                      Nordstrom’s international fulfillment service.Borderfree is an online merchant 
@@ -216,9 +268,10 @@
 
             <div id="contt1">
                 <div id="contt2">
-                    <p>Your Order</p>
+                    <p>Your Order Details</p>
+                    <hr>
                 </div>
-                <button class="but1">Continue>></button>
+                <!-- <button class="but1">Continue>></button> -->
                 <div class="contt3">
                     <div id="contt4">
                         <p>Items</p>
@@ -242,6 +295,7 @@
                 <p style="margin-left: 18px; color: rgb(10, 145, 198); font-size: 14px;">+ Promo Code</p>
                 <!-- hr line -->
                 <hr width="90%;">
+                <button class="but2">Continue>></button>
                 <!-- <a href="payment.html">
                     <button id="log">Proceed</button>
                 </a> -->
@@ -278,7 +332,8 @@
                 email,fname,lname,add1,add2,pin,city,region,phone ,country
             }
             localStorage.setItem("address",JSON.stringify(obj))
-            window.location.href="./payment.html"
+            alert("Payment Successfully!")
+            window.location.href="./index.html"
         }
         
         email.value="";
