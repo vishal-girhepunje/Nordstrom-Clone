@@ -1,56 +1,59 @@
 
-let cartItems = JSON.parse(localStorage.getItem("cartItems")) || []
-let sum = 0
-let x = cartItems.forEach((element)=> sum+=element.pro_price)
-let priceArr = JSON.parse(localStorage.getItem("totalPrice")) || {}
+let cartItems = JSON.parse(localStorage.getItem("bag")) || []
+
+
+
 
 
 
 displayCartItems = (data) => { 
+    let sum=0
     let x = data.length;
     document.querySelector("#cart_items").innerHTML = "";
-    data.forEach(element => {
-      
-        if (element.prod_img != undefined && element.pro_brand != undefined && element.curr_price != undefined && element.product_name != undefined)
+    for(let i=0;i<data.length;i++){
+        if (data[i].prod_img != undefined && data[i].pro_brand != undefined && data[i].curr_price != undefined && data[i].product_name != undefined)
         {
                 let div = document.createElement("div");
                 let img = document.createElement("img")
-                img.setAttribute("src", element.prod_img)
+                img.setAttribute("src", data[i].prod_img)
                  
                   let brand = document.createElement("h2")
-                  brand.innerText= element.pro_brand
+                  brand.innerText= data[i].pro_brand
                  
                   let currentprice = document.createElement("p")
                   currentprice.setAttribute("id","price")
-                  currentprice.innerText ="INR "+element.pro_price
+                  currentprice.innerText ="INR "+data[i].pro_price
+                  sum+=data[i].pro_price
                  
           
           
                   let description = document.createElement("p")
                   description.setAttribute("id","desc")
-                  description.innerText = element.product_name;
+                  description.innerText = data[i].product_name;
           
             let remove = document.createElement("p")
            
             remove.innerText = "Remove"
             remove.setAttribute("id", "remove")
-            remove.addEventListener("click", removeElements)
+            remove.addEventListener("click", function(){
+                cartItems.splice(i,1)
+                localStorage.removeItem("bag")
+                localStorage.setItem("bag",JSON.stringify(cartItems))
+                displayCartItems(cartItems)
+                
+            })
             
-                  div.append(img, brand,description, currentprice,remove)
+            div.append(img, brand,description, currentprice,remove)
                   
             document.querySelector("#cart_items").append(div)
         }
         
-        document.querySelector("#total_price").innerText = "INR " + sum;
-        priceArr[1] = sum;
-        localStorage.setItem("totalPrice", JSON.stringify(priceArr))
-        
-    });
+        document.querySelector("#total_price").innerText = "INR " + sum
+        localStorage.setItem("totalPrice",sum)
+    }
     // document.querySelector("#loading_").innerText = x + " items";
    
 }
-removeElements = () => { 
-    
-}
+
 
 displayCartItems(cartItems)

@@ -20,6 +20,7 @@ width: 100%;
 }
 #all_products>div>img:hover{
     transform: scale(1.07);
+    overflow: hidden;
     }
 #string{
     color: green;
