@@ -8,6 +8,7 @@
   <title>Payment</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <style>
+
     header{
     width: 100%;
     background-color: white;
@@ -126,6 +127,7 @@ a:hover{
     height: 40px;
      
 }
+
     .container {
       background-color: rgb(240, 248, 129);
       width: 70%;
@@ -165,7 +167,9 @@ a:hover{
     #order {
       width: 70%;
       margin: auto;
+
       margin-top: 140px;
+
       padding: 5px 0px 5px 0px;
       text-align: center;
       border-radius: 5px;
@@ -181,17 +185,22 @@ a:hover{
       margin-top: 20px;
       border-radius: 5px;
 
+
       /* border: 1px solid black; */
+
     }
 
     #tab {
       margin-left: 10%;
+
       /* border: 1px solid black; */
+
     }
 
     #break {
       margin-top: 15%;
       margin-right: 10%;
+
       /* margin-bottom: 2%; */
       /* border: 1px solid black; */
       width: 30%;
@@ -204,12 +213,15 @@ a:hover{
     .done {
       color: rgb(228, 62, 62);
       /* border: 1px solid black; */
+
     }
 
     .card {
       width: 100%;
       height: 25px;
+
       /* border: 1px solid red; */
+
     }
 
     #place-order {
@@ -231,6 +243,7 @@ a:hover{
 </head>
 
 <body>
+
   <header>
     <div class="top">
         <h4 class><b>Shipping outside of the U.S. or Canada? </b><a
@@ -291,7 +304,9 @@ a:hover{
   <div id="order">
     <h1>Order Details</h1>
 
+
     <h3>Order Total : &nbsp; ₹ &nbsp<span id="total">0</span></h3>
+
 
   </div>
 
@@ -406,4 +421,5 @@ a:hover{
   let x = (localStorage.getItem("totalPrice"))
   console.log(x)
   document.querySelector("#total").innerText = x
+
 </script>
