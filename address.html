@@ -151,11 +151,11 @@
             display: flex;
             width: 90%;
             margin: auto;
-            /* border: 1px solid black; */
+            
         }
         #contt4>p:nth-child(2){
-            margin-left: 195px;
-            
+            margin-left: 170px;
+            /* border: 1px solid black; */
         }
         #contt5{
             display: flex;
@@ -187,9 +187,10 @@
             margin-top: -1px;
         }
         #contt7>h4{
-            margin-left: 132px;
+            margin-left: 165px;
             margin-top: -1px;
             padding: 2px;
+            /* border: 1px solid black; */
         }
         #mytotal{
             margin-left: 20px;
@@ -274,20 +275,20 @@
                 <!-- <button class="but1">Continue>></button> -->
                 <div class="contt3">
                     <div id="contt4">
-                        <p>Items</p>
+                        <p>Total items:-</p>
                         <p id="myitems">0</p>
                     </div>
                     <div id="contt5">
-                        <p>Shipping</p>
-                        <p>free</p>
+                        <p>Shipping :-</p>
+                        <p>Free</p>
                     </div>
                     <div id="contt6">
-                        <p>Duties & Taxes</p>
-                        <p>free</p>
+                        <p>Duties & Taxes :-</p>
+                        <p>Free</p>
                     </div>
                     <div id="contt7">
-                        <h3>Total</h3>
-                        <h4 id="mytotal">(INR)₹16,821</h4>
+                        <h3>Total &nbsp; &nbsp;</h3>
+                        <h4 id="mytotal">0</h4>
                     </div>
                 </div>
                 <!-- hr line -->
@@ -349,8 +350,8 @@
         
     }
     let x=JSON.parse(localStorage.getItem("totalPrice"))
-console.log(x[1])
-document.querySelector("#mytotal").innerText="(INR)"+x[1]
+//console.log(x[1])
+document.querySelector("#mytotal").innerText="₹"+" "+x[1]
 
 let y=JSON.parse(localStorage.getItem("cartItems"))
 // console.log(y[1])

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         
        .container{
@@ -20,6 +21,7 @@
          border: 1px solid rgb(230, 224, 224);
          /* text-align: center; */
          /* height: 100vh; */
+         border: 1px solid black;
       }
       .container>#but{
         width: 300px;
@@ -30,53 +32,73 @@
         font-weight:bold;
         font-size: 20px;
         border: 1px solid white;
+        border: 1px solid black;
       }
       .big{
         width:60%;
         height:25px;
         text-align: center;
+        border: 1px solid black;
         
       }
       #order{
-        width: 67%;
-        height:auto;
-        /* background-color: aquamarine; */
-        margin-left:200px ;
-        border: 1px solid aquamarinegray;
-        padding-left: 3%;
-        border-radius: 10px;
+        width: 70%;
+        margin: auto;
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+        border-radius: 5px;
+        /* border: 1px solid black; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       }
       #pay{
         display: flex;
-        width: 67%;
-        /* background-color: aquamarine; */
-        /* justify-content: center; */
+        width: 70%;
         justify-content: space-between;
-        border: 0px solid gray;
-        margin-left:200px ;
+        margin: auto;
         margin-top:20px ;
-        padding: 16px;
-        border-radius: 20px;
-
+        border-radius: 5px;
+        
+        /* border: 1px solid black; */
       }
       #tab{
-        margin-left: 15%;
+        margin-left: 10%;
+        /* border: 1px solid black; */
       }
       #break{
-        margin-top: 12%;
-        margin-right: 15%;
-        margin-bottom: 2%;
-
+        margin-top: 15%;
+        margin-right: 10%;
+        /* margin-bottom: 2%; */
+        /* border: 1px solid black; */
+        width: 30%;
       }
-
+      /* #break>input{
+        width: 100%;
+        height: 25px;
+      } */
       .done{
         color: rgb(228, 62, 62);
+        /* border: 1px solid black; */
       }
       .card {
-      width: 200px;
-      height: 20px;
+      width: 100%;
+      height: 25px;
+      /* border: 1px solid red; */
       }
+      #place-order{
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 45%;
+        padding: 10px 20px 10px 20px;
+        background-color: rgb(255, 63, 108);
+        border: 0px;
+        color: white;
 
+      }
+      #place-order:hover{
+          cursor: pointer;
+          background-color: rgb(214, 35, 76);
+      }
+      
     </style>
 </head>
 <body>
@@ -84,39 +106,48 @@
        
 
         <div id="order">
-            <h2 style="color:rgb(201, 59, 83)">Order Details</h2>
+            <h1 >Order Details</h1>
        
-        <h3 style="color:rgb(201, 59, 83)">Order Total:<span id="total">0</span></h3>
+        <h3>Order Total : &nbsp; ₹ &nbsp<span id="total">0</span></h3>
                 
         </div>
 
         <div id="pay">
             <div id="tab">
-                <h2 style="color:rgb(201, 59, 83) ;">Payment Information</h2>
+                <h1>Payment Information</h1>
                 <img style="width:140px" src="https://www.nicepng.com/png/full/54-542683_credit-card-pay-now-visa-and-mastercard-accepted.png" alt="">
                 
-                <p>Credit Card Number:</p>
-                <p>Card Type</p>
+                <h4>Credit Card Number:</h4>
+                <h4>Card Type</h4>
+                <h4>Expiration Date:</h4>
+                <h4>Security Code:</h4>
 
-                <p>Expiration Date:</p>
-                <p>Security Code:</p>
             </div>
-
-           <div id="break"><input class="card" type="text"><br><br>
+            
+           <div id="break"><input class="card" type="number" placeholder="Card Number" required><br><br>
             <select class="card" name="" id="" >
                 <option value="">Select Card</option>
                 <option value="">Visa</option>
                 <option value="">MasterCard</option>
 
             </select><br><br>
-            <input class="card" type="text"><br><br>
-            <input class="card" type="text"></div>
+            <input class="card" required type="text" placeholder="MM/YYYY"><br><br>
+            <input class="card" required type="text" placeholder="Security Code">
+          </div>
 
         </div>
-        <button id="place-order" style="text-align: center; display: block; margin-left: 210px; margin-top: 20px; padding: 8px; background-color: rgb(195, 71, 129); color: white;">Place Order</button>
+        <br>
+        <button id="place-order">Place Order</button>
 </body>
 </html>
     <script>
+
+      let card_num = document.getElementsByClassName('card');
+      let mon_day = document.getElementsByClassName('card');
+      let code = document.getElementsByClassName('card');
+
+
+
     document.querySelector("button").addEventListener("click", fun2);
 
 let arr= JSON.parse(localStorage.getItem(""))||[];
@@ -148,8 +179,14 @@ window.location.href="signin1.html";
 document.querySelector("#place-order").addEventListener("click",function(){
     localStorage.removeItem("myproduct")
     localStorage.removeItem("total-price")
-    alert("Confirm your otp first")
-    window.location.href="./payment_confirm.html"
+
+    if(card_num.value !== "" || card_num.value !== null){
+      alert("Confirm your otp first")
+      window.location.href="./payment_confirm.html"
+    }else{
+      alert("Enter details first!")
+    }
+    
 })
 let x=JSON.parse(localStorage.getItem("totalPrice"))
 console.log(x[1])
