@@ -57,7 +57,7 @@ a:hover{
     align-items: center;
     
 }
-.logo>img{
+.logo img{
     height: 80px;
     width: 80px;
     border-radius: 3%;
@@ -252,7 +252,7 @@ a:hover{
         <div class="country"><img src="home_images/india.png" alt=""><b><u>INDIA</u></b></div>
     </div>
     <div class="firstnav">
-        <div class="logo"><img src="home_images/logo 4.png" alt=""></div>
+        <div class="logo"><a href="./index.html"><img src="home_images/logo 4.png" alt=""></a></div>
         <div class="search">
             <img id="searchicon" src="home_images/search.png" alt="">
             <input id="searchfun" type="text" placeholder="Search for products or brands">
@@ -289,7 +289,7 @@ a:hover{
             <a href="#"><img src="home_images/cart.png" alt="">Purchase</a>
         </div>
         <div class="cart">
-            <a id="numOfItemInCart" href="#"><img src="home_images/shopping-cart.png" alt="">0</a>
+            <a id="numOfItemInCart" href="#"><img src="home_images/shopping-cart.png" alt=""><span>0</span></a>
         </div>
 
 
@@ -406,6 +406,9 @@ a:hover{
 
 </html>
 <script>
+  let no_ofitems=localStorage.getItem("itemsno") || 0
+  
+  document.querySelector("#numOfItemInCart span").innerText=no_ofitems
 
   let input1 = document.querySelector(".cardn")
   let input2 = document.querySelector(".cards")
@@ -414,6 +417,8 @@ a:hover{
   document.querySelector("#place-order").addEventListener("click", function () {
     localStorage.removeItem("bag")
     localStorage.removeItem("totalPrice")
+    localStorage.removeItem("itemsno")
+
 
    window.location.href="./payment_confirm.html"
 
