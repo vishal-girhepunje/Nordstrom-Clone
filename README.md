@@ -10,7 +10,7 @@ Nordstrom is an international Online Shopping Store. Founded in 1901 by John W. 
  - [@Subham Burnwal](https://github.com/Subham-0922)
 
 
-#Build With
+# Build With
 - HTML5
 - CSS3
 - JavaScript
@@ -19,7 +19,7 @@ Nordstrom is an international Online Shopping Store. Founded in 1901 by John W. 
 
 
 
-#Core Functionalities
+# Core Functionalities
 - Login/Signup
 - Admin:Add,Update and Delete Items.
 - Product Page
@@ -29,4 +29,25 @@ Nordstrom is an international Online Shopping Store. Founded in 1901 by John W. 
 - Payment
 
 # Landing Page
-![](images/home.PNG)
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Landing_Page1.PNG?raw=true">
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Landing_Page2.PNG?raw=true">
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Landing_Page3.PNG?raw=true">
+
+# SignIn
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Sign_In.PNG?raw=true">
+
+# Product Pages
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Product_Page.PNG?raw=true">
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Product_Page2.PNG?raw=true">
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Product_Page3.PNG?raw=true">
+
+# Checkout Page
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Checkout_Page.PNG?raw=true">
+
+# PaymentPage
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Payment_Page.PNG?raw=true">
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Confirm_Otp.PNG?raw=true">
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Confirm_Otp2.PNG?raw=true">
+
+# Admin
+<img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Admin_Crud.PNG?raw=true">
