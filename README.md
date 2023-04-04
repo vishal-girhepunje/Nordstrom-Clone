@@ -28,6 +28,25 @@ Nordstrom is an international Online Shopping Store. Founded in 1901 by John W. 
 - Checkout
 - Payment
 
+# Workflow
+- User should be able to signup.
+
+- User should be able to login.
+
+- User can see Homepage of our website.
+
+- User should see products page eg:mens, women's etc, depending on kind of websites, products page will vary.
+
+- User should able to filter and sort items.
+
+- User should be able to add items to cart.
+
+- User should see total items in cart and total price etc.
+
+- User should be able to go to payments page and place their order.
+
+## 👉 ⎚ [Click here](https://drive.google.com/file/d/1EteJ3O7yqC9rUXXyCbYTC9_PGveilp8G/view?usp=share_link) to Watch detail explaned Video of this application.
+
 # Landing Page
 <img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Landing_Page1.PNG?raw=true">
 <img width="800" src="https://github.com/vishal-girhepunje/affectionate-zinc-1194/blob/main/Readme_Images/Landing_Page2.PNG?raw=true">
