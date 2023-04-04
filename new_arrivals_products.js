@@ -1,5 +1,6 @@
 let url = "https://long-plum-chicken-fez.cyclic.app/api/all"
 let stack = []
+let no_ofitems=localStorage.getItem("itemsno") || 0
 let bag =JSON.parse(localStorage.getItem("bag"))||[]
  
 fetch(url)
@@ -131,6 +132,9 @@ displayProducts = (data) => {
                 button.addEventListener("click", () => { 
                 bag.push(element);
                 localStorage.setItem("bag", JSON.stringify(bag));
+                no_ofitems++
+                localStorage.setItem("itemsno",no_ofitems)
+                document.querySelector("#numOfItemInCart span").innerText=no_ofitems
                 alert("Item Added to Cart")
 
              })

@@ -1,5 +1,8 @@
 
 let cartItems = JSON.parse(localStorage.getItem("bag")) || []
+let no_ofitems=localStorage.getItem("itemsno") || 0
+
+document.querySelector("#numOfItemInCart span").innerText=no_ofitems
 
 
 
@@ -37,6 +40,9 @@ displayCartItems = (data) => {
             remove.setAttribute("id", "remove")
             remove.addEventListener("click", function(){
                 cartItems.splice(i,1)
+                no_ofitems--
+                localStorage.setItem("itemsno",no_ofitems)
+                document.querySelector("#numOfItemInCart span").innerText=no_ofitems
                 localStorage.removeItem("bag")
                 localStorage.setItem("bag",JSON.stringify(cartItems))
                 displayCartItems(cartItems)
